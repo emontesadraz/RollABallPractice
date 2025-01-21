@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
 
     public GameObject player; // Esto es un GameObject que se llama player que sirve para guardar el objeto que queremos seguir
     private Vector3 offset; // Esto es un Vector3 que se llama offset que sirve para guardar la distancia entre la cámara y el objeto que queremos seguir
+    
     // Start is called before the first frame update
     void Start()
     {

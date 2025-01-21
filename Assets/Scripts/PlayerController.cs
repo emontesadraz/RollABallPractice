@@ -42,15 +42,29 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Esta funcion hace que que el jugador se mueva en la direccion que se le indique
-    void OnMove (InputValue movementValue)
+    // Esta función hace que el jugador se mueva en la dirección que se le indique
+void OnMove(InputValue movementValue)
+{
+    // Verifica si únicamente las teclas de flecha están siendo presionadas
+    if (Keyboard.current.upArrowKey.isPressed || 
+        Keyboard.current.downArrowKey.isPressed || 
+        Keyboard.current.leftArrowKey.isPressed || 
+        Keyboard.current.rightArrowKey.isPressed)
     {
         Vector2 movementVector = movementValue.Get<Vector2>(); // Obtiene el vector de movimiento
-        Debug.Log("PlayerController::OnMove()::movementVector: " + movementVector); // Imprime el vector de movimiento en la consola
-        
-        movementX = movementVector.x; // Asigna el movimiento en el eje X
-        movementY = movementVector.y; // Asigna el movimiento en el eje Y
+
+        // Limitar el movimiento al uso exclusivo de las flechas
+        movementX = Keyboard.current.rightArrowKey.isPressed ? 1 : Keyboard.current.leftArrowKey.isPressed ? -1 : 0;
+        movementY = Keyboard.current.upArrowKey.isPressed ? 1 : Keyboard.current.downArrowKey.isPressed ? -1 : 0;
     }
+    else
+    {
+        // Detener el movimiento si no se presionan las flechas
+        movementX = 0;
+        movementY = 0;
+    }
+}
+
 
     // Esta funcion se llama cuando el jugador recoge un objeto y actualiza el contador de objetos recogidos
     void SetCountText()
