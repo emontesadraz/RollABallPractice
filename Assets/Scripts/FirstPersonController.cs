@@ -7,23 +7,30 @@ public class FirstPersonController : MonoBehaviour
 
     void Update()
     {
-        // Mover la cámara con W, A, S, D
-        MoveCamera();
+        // Mover la cámara y ajustarla según la dirección del jugador
+        MoveAndRotateCamera();
     }
 
-    void MoveCamera()
+    void MoveAndRotateCamera()
     {
         float moveX = 0f;
         float moveZ = 0f;
 
-        // Detectar las teclas W, A, S, D
-        if (Keyboard.current.wKey.isPressed) moveZ = 1f;
-        if (Keyboard.current.sKey.isPressed) moveZ = -1f;
-        if (Keyboard.current.dKey.isPressed) moveX = 1f;
-        if (Keyboard.current.aKey.isPressed) moveX = -1f;
+        // Detectar las teclas de movimiento (flechas)
+        if (Keyboard.current.upArrowKey.isPressed) moveZ = 1f;
+        if (Keyboard.current.downArrowKey.isPressed) moveZ = -1f;
+        if (Keyboard.current.rightArrowKey.isPressed) moveX = 1f;
+        if (Keyboard.current.leftArrowKey.isPressed) moveX = -1f;
 
-        // Calcular la dirección de movimiento relativa a la cámara
-        Vector3 moveDirection = transform.right * moveX + transform.forward * moveZ;
+        // Calcular la dirección de movimiento
+        Vector3 moveDirection = new Vector3(moveX, 0f, moveZ);
+
+        if (moveDirection != Vector3.zero)
+        {
+            // Ajustar la rotación de la cámara para que mire en la dirección del movimiento
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection); // Quaternion es una estructura que representa una rotación en 3D y sirve para almacenar y manipular rotaciones
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f); // En esta linea, se interpola entre la rotación actual y la rotación objetivo para que la transición sea suave
+        }
 
         // Aplicar movimiento a la cámara
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime;
