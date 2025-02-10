@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RampBoost : MonoBehaviour
 {
-    public float boostForce = 10f; // Fuerza del empujón
+    public float boostForce = 100f; // Fuerza del empujón
     public Vector3 boostDirection = Vector3.up; // Dirección del empujón
 
     private void OnCollisionEnter(Collision collision)
