@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public GameObject winTextObject;
     private int count;
     public GameObject InvisibleWall;
+    public GameObject InvisibleWall2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +38,13 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
 
-            if (count >= 1)
+            if (count == 1)
             {
                 InvisibleWall.SetActive(false);
+            }
+            else if (count == 2)
+            {
+                InvisibleWall2.SetActive(false);
             }
         }
 
@@ -54,7 +60,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 5)
+        if (count >= 3)
         {
             winTextObject.SetActive(true);
         }
