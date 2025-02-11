@@ -1,38 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class Camara_PrimPersona : MonoBehaviour {
-    // Reference to the player GameObject.
-    public GameObject player;
-    // Sensibilidad del ratón
-    public float mouseSensitivity = 100.0f;
-    private float xRotation = 0.0f;
-    private float yRotation = 0.0f;
+public class FirstPersonController : MonoBehaviour
+{
+    public float moveSpeed = 5f; // Velocidad de movimiento de la cámara
 
-    // Start is called before the first frame update
-    void Start(){
-        // Ocultar y bloquear el cursor en el centro de la pantalla
-        Cursor.lockState = CursorLockMode.Locked;
+    void Update()
+    {
+        MoveAndRotateCamera();
     }
 
-    // LateUpdate is called once per frame after all Update functions have been completed.
-    void LateUpdate(){
-        // Obtener el movimiento del ratón
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+    void MoveAndRotateCamera()
+    {
+        float moveX = 0f;
+        float moveZ = 0f;
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        if (Keyboard.current.upArrowKey.isPressed) moveZ = 1f; // Si se presiona la tecla de flecha arriba, mover hacia adelante
+        if (Keyboard.current.downArrowKey.isPressed) moveZ = -1f; // Si se presiona la tecla de flecha abajo, mover hacia atrás
+        if (Keyboard.current.rightArrowKey.isPressed) moveX = 1f; // Si se presiona la tecla de flecha derecha, mover hacia la derecha
+        if (Keyboard.current.leftArrowKey.isPressed) moveX = -1f; // Si se presiona la tecla de flecha izquierda, mover hacia la izquierda
 
-        yRotation += mouseX;
+        Vector3 moveDirection = new Vector3(moveX, 0f, moveZ); // Dirección de movimiento
 
-        // Rotar la cámara en el eje X (vertical) y Y (horizontal)
-        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
-        // Rotar el jugador en el eje Y (horizontal)
-        player.transform.Rotate(Vector3.up * mouseX);
+        if (moveDirection != Vector3.zero) // Si hay movimiento
+        {
+            // Ajustar la rotación de la cámara para que mire en la dirección del movimiento
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f); // Reducir la velocidad de rotación
+        }
 
-        // Asegurarse de que la cámara siga al jugador
-        transform.position = player.transform.position;
+        transform.position += moveDirection.normalized * (moveSpeed * 0.5f) * Time.deltaTime; // Reducir la velocidad de movimiento
     }
 }
