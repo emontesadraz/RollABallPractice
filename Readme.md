@@ -88,3 +88,20 @@ puntoDeReinicio es un objeto en la escena que define la posición a la que se en
 OnTriggerEnter(Collider other) detecta si el objeto que entra en el trigger tiene el tag "Player".
 Si es el jugador, su posición se actualiza a la de puntoDeReinicio.
 Este sistema es útil para checkpoints, límites de caída o zonas de reinicio en plataformas y juegos de aventura. 
+
+
+# FUNCIONAMIENTO DEL JUEGO
+
+* ## CÓMO JUGAR
+    * **MOVIMIENTO**: Flechas direccionales
+    * **SALTO**: Espacio
+    * **CÁMARA**: "C"
+
+* ## OBJETIVO
+    El objetivo del juego es recoger todos los Pick Ups. Hay en total 3 Pick Ups, uno en cada zona del mapa. Tendrás que recogerlos sin que te pille el enemigo o sin que te tiren con sus proyectiles
+
+# GAMEPLAY EN DIRECTO
+
+## PRIMER VISTAZO
+
+![Primer Vistazo al juego](videos/giphy.gif)
