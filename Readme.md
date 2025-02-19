@@ -104,4 +104,45 @@ Este sistema es útil para checkpoints, límites de caída o zonas de reinicio e
 
 ## PRIMER VISTAZO
 
-![Primer Vistazo al juego](videos/giphy.gif)
+![Primer Vistazo al juego](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWJpdnB2NHhjZm9uMzdlbnR1Nm9yd3Uzcm5rN2p6cmQ5ajQ0dzJ1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AFVrOLSNewmIG2yW9C/giphy.gif)
+
+## FUNCIONALIDADES BÁSICAS
+
+* ### ***OBJETOS MÓVILES Y MUERTE DEL JUGADOR***
+
+![Muerte del jugador](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHp1cGgzNHp5andmbGNhbXNtdXhtbmZvdGUzZjdjcDE1dG9rZ29tNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YcfFmiMJoET2sBcHEP/giphy.gif)
+
+
+* ### ***COGER EL PRIMER PICK UP Y PASAR A LA SIGUIENTE ZONA***
+
+![Primera Zona](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWJ0aHUxZHR5aGoyaTU0d2tsaXRrN3FmYnlnOWo4YTJ3Z2dxa2N3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IYTKLJCcXhhqqUvSgL/giphy.gif)
+
+* ### ***PEGAR UN SALTO***
+
+![Salto](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXd4cnExZzk0YnY2Zm82dDE5d3ZoNTdyNjV5b2FyN3psOXZ2ZGM5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XfAKfWtW4EXwRi8Dac/giphy.gif)
+
+* ### ***PRIMERA PERSONA***
+
+![Primera persona](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHl1aHl5eDZuZHlwdGI0a3NhZzZucjJodHRua2ptbzVhYmFmeGF0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9CLM0e6MABAY7XTimG/giphy.gif)
+
+* ### ***BOOST DE LA RAMPA***
+
+![Boost de la rampa](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGNnOXpoeG04dzdoNnQyeXZ4OGs2ZjBrNnB0c211d3JpeGkyaHo5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VinUYHkF8bgNA6j2ea/giphy.gif)
+
+* ### ***MENSAJE DE VICTORIA***
+
+Si te caes al vacío, vuelves a aparecer en el punto donde empezaste la partida
+
+![Punto inicial](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHYzcHpwbGU5eWd4eHB3cGxiZ3NhODN6dXRkbmJnZ3N1aWQzanV4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/w1SdML2CrcnRso03FL/giphy.gif)
+
+Si te caes a la lava en la tercera zona, reaparecerás en el principio del camino
+
+![Tercer nivel](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzB2bmliZWR3cDlwZWswMThxdzRjMGc0cmo1bG5qaGZyN3RmcWxjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CDLVphFlxbxOQfNaHY/giphy.gif)
+
+* ### ***MENSAJE DE VICTORIA***
+
+![GANASTE](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp5OXUxMnhyMnNvcWI2MXJ4Zm1majR3MHVlOWp5MzByeWJ4bmJhMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UFOa4RhjRUKR3oGJeE/giphy.gif)
+
+
+Espero que disfrutéis del juego tanto en PC como en Android que, gracias a la APK, también se puede jugar
+[Pincha aquí para ir directo al APK](RollABallPracticeAndroid.apk)
