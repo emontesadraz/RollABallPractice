@@ -14,20 +14,63 @@ public class PlayerController : MonoBehaviour
     public GameObject InvisibleWall;
     public GameObject InvisibleWall2;
 
+    public Renderer colores; // Para cambiar el color según el estado
+
+    public enum PlayerState { Idle, Moving, Jumping }; // Estados del jugador
+    public PlayerState currentState; // Estado actual
+    private bool isMoving = false;
+    public Animator animator; // Animator del jugador 
+    public float jumpForce = 4f;
 
     // Start is called before the first frame update
-    void Start()
+   void Start()
+{
+    rb = GetComponent<Rigidbody>();
+    animator = GetComponent<Animator>();
+
+    // Buscar automáticamente el MeshRenderer si no está asignado
+    if (colores == null)
     {
-        rb = GetComponent<Rigidbody>();
-        count = 0;
-        SetCountText();
-        winTextObject.SetActive(false);
+        colores = GetComponent<Renderer>();
+        if (colores == null)
+        {
+            Debug.LogError("No se encontró un Renderer en el Player. Asegúrate de que el Player tiene un MeshRenderer.");
+        }
     }
+
+    count = 0;
+    SetCountText();
+    winTextObject.SetActive(false);
+
+    currentState = PlayerState.Idle;
+    UpdateState();
+}
+    void Update()
+    {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            currentState = PlayerState.Jumping;
+            UpdateState();
+        }
+    }
+
 
     private void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
         rb.AddForce(movement * speed);
+
+        // Detectar si el jugador se está moviendo
+        isMoving = rb.velocity.magnitude > 0.1f;
+
+        // Actualizar el estado visual
+        UpdateState();
+
+        // Obtener datos del acelerómetro
+        Vector3 acceleration = Input.acceleration;
+        Vector3 gyroMovement = new Vector3(acceleration.x, 0.0f, acceleration.y);
+        rb.AddForce(gyroMovement * speed);
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,7 +78,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            count++;
             SetCountText();
 
             if (count == 1)
@@ -47,7 +90,6 @@ public class PlayerController : MonoBehaviour
                 InvisibleWall2.SetActive(false);
             }
         }
-
     }
 
     void OnMove(InputValue movementValue)
@@ -55,6 +97,17 @@ public class PlayerController : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>();
         movementX = movementVector.x;
         movementY = movementVector.y;
+
+        isMoving = movementX != 0 || movementY != 0;
+        if (isMoving)
+        {
+            currentState = PlayerState.Moving;
+        }
+        else
+        {
+            currentState = PlayerState.Idle;
+        }
+        UpdateState();
     }
 
     void SetCountText()
@@ -74,5 +127,15 @@ public class PlayerController : MonoBehaviour
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "Game Over!";
         }
+    }
+
+    // Método para actualizar el color según el estado
+    void UpdateState()
+    {
+        animator.SetBool("isMoving", currentState == PlayerState.Moving);
+        colores.material.color = currentState == PlayerState.Moving ? Color.green : Color.red;
+
+        animator.SetBool("isJumping", currentState == PlayerState.Jumping);
+        colores.material.color = currentState == PlayerState.Jumping ? Color.blue : Color.red;
     }
 }
