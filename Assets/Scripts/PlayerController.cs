@@ -21,40 +21,42 @@ public class PlayerController : MonoBehaviour
     private bool isMoving = false;
     public Animator animator; // Animator del jugador 
     public float jumpForce = 4f;
+    private bool isGrounded = true; // Verifica si el jugador está en el suelo
 
-    // Start is called before the first frame update
-   void Start()
-{
-    rb = GetComponent<Rigidbody>();
-    animator = GetComponent<Animator>();
-
-    // Buscar automáticamente el MeshRenderer si no está asignado
-    if (colores == null)
+    void Start()
     {
-        colores = GetComponent<Renderer>();
+        rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+
+        // Buscar automáticamente el MeshRenderer si no está asignado
         if (colores == null)
         {
-            Debug.LogError("No se encontró un Renderer en el Player. Asegúrate de que el Player tiene un MeshRenderer.");
+            colores = GetComponent<Renderer>();
+            if (colores == null)
+            {
+                Debug.LogError("No se encontró un Renderer en el Player. Asegúrate de que el Player tiene un MeshRenderer.");
+            }
         }
+
+        count = 0;
+        SetCountText();
+        winTextObject.SetActive(false);
+
+        currentState = PlayerState.Idle;
+        UpdateState();
     }
 
-    count = 0;
-    SetCountText();
-    winTextObject.SetActive(false);
-
-    currentState = PlayerState.Idle;
-    UpdateState();
-}
     void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        // Solo permite saltar si está en el suelo
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             currentState = PlayerState.Jumping;
+            isGrounded = false; // Evita saltos en el aire
             UpdateState();
         }
     }
-
 
     private void FixedUpdate()
     {
@@ -121,6 +123,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Ground")) // Si toca el suelo, puede saltar
+        {
+            isGrounded = true;
+            currentState = isMoving ? PlayerState.Moving : PlayerState.Idle;
+            UpdateState();
+        }
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
@@ -129,13 +138,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground")) // Si deja de tocar el suelo
+        {
+            isGrounded = false;
+        }
+    }
+
     // Método para actualizar el color según el estado
     void UpdateState()
     {
         animator.SetBool("isMoving", currentState == PlayerState.Moving);
-        colores.material.color = currentState == PlayerState.Moving ? Color.green : Color.red;
-
         animator.SetBool("isJumping", currentState == PlayerState.Jumping);
-        colores.material.color = currentState == PlayerState.Jumping ? Color.blue : Color.red;
+
+        if (currentState == PlayerState.Moving)
+            colores.material.color = Color.green;
+        else if (currentState == PlayerState.Jumping)
+            colores.material.color = Color.blue;
+        else
+            colores.material.color = Color.red;
     }
 }

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 18956406}
   m_Layer: 0
   m_Name: Rampa (32)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 46986142}
   m_Layer: 0
   m_Name: Suelo
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 81379924}
   m_Layer: 0
   m_Name: Rampa (4)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 103457713}
   m_Layer: 0
   m_Name: Rampa (38)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: 104426681}
   m_Layer: 0
   m_Name: Rampa (41)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 111152713}
   m_Layer: 0
   m_Name: Rampa (28)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1374,7 +1374,7 @@ GameObject:
   - component: {fileID: 141933432}
   m_Layer: 0
   m_Name: Rampa (15)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 148173097}
   m_Layer: 0
   m_Name: Rampa (37)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 256848066}
   m_Layer: 0
   m_Name: Rampa (14)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2517,7 +2517,7 @@ GameObject:
   - component: {fileID: 372310579}
   m_Layer: 0
   m_Name: Rampa (25)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2690,7 +2690,7 @@ GameObject:
   - component: {fileID: 424450600}
   m_Layer: 0
   m_Name: Rampa (19)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2800,7 +2800,7 @@ GameObject:
   - component: {fileID: 430533751}
   m_Layer: 0
   m_Name: Rampa (52)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3256,7 +3256,7 @@ GameObject:
   - component: {fileID: 483813895}
   m_Layer: 0
   m_Name: Rampa (3)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3426,7 +3426,7 @@ GameObject:
   - component: {fileID: 512996411}
   m_Layer: 0
   m_Name: Rampa (10)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3972,7 +3972,7 @@ GameObject:
   - component: {fileID: 573827320}
   m_Layer: 0
   m_Name: Rampa (21)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4437,7 +4437,7 @@ GameObject:
   - component: {fileID: 625202101}
   m_Layer: 0
   m_Name: Rampa (18)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4914,7 +4914,7 @@ GameObject:
   - component: {fileID: 653820711}
   m_Layer: 0
   m_Name: Rampa (2)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5019,7 +5019,7 @@ GameObject:
   - component: {fileID: 662736451}
   m_Layer: 0
   m_Name: Rampa (46)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6216,7 +6216,7 @@ GameObject:
   - component: {fileID: 764163640}
   m_Layer: 0
   m_Name: Rampa (20)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6395,7 +6395,7 @@ GameObject:
   - component: {fileID: 777525730}
   m_Layer: 0
   m_Name: Rampa (7)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6500,7 +6500,7 @@ GameObject:
   - component: {fileID: 790772180}
   m_Layer: 0
   m_Name: Rampa (26)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6923,7 +6923,7 @@ GameObject:
   - component: {fileID: 867338558}
   m_Layer: 0
   m_Name: Rampa (22)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7314,7 +7314,7 @@ GameObject:
   - component: {fileID: 890341792}
   m_Layer: 0
   m_Name: Rampa (45)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7419,7 +7419,7 @@ GameObject:
   - component: {fileID: 892294669}
   m_Layer: 0
   m_Name: Rampa (29)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7524,7 +7524,7 @@ GameObject:
   - component: {fileID: 897367514}
   m_Layer: 0
   m_Name: Rampa
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7876,7 +7876,7 @@ GameObject:
   - component: {fileID: 947112203}
   m_Layer: 0
   m_Name: Rampa (27)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8633,7 +8633,7 @@ GameObject:
   - component: {fileID: 1037149536}
   m_Layer: 0
   m_Name: Rampa (11)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9132,7 +9132,7 @@ GameObject:
   - component: {fileID: 1091584291}
   m_Layer: 0
   m_Name: Rampa (12)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9315,7 +9315,7 @@ GameObject:
   - component: {fileID: 1134234559}
   m_Layer: 0
   m_Name: Rampa (30)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9607,7 +9607,7 @@ GameObject:
   - component: {fileID: 1196059402}
   m_Layer: 0
   m_Name: Rampa (1)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9712,7 +9712,7 @@ GameObject:
   - component: {fileID: 1196135109}
   m_Layer: 0
   m_Name: Rampa (49)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10109,7 +10109,7 @@ GameObject:
   - component: {fileID: 1216414926}
   m_Layer: 0
   m_Name: Rampa (6)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10214,7 +10214,7 @@ GameObject:
   - component: {fileID: 1225354743}
   m_Layer: 0
   m_Name: Rampa (42)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10459,7 +10459,7 @@ GameObject:
   - component: {fileID: 1240503934}
   m_Layer: 0
   m_Name: Rampa (39)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10564,7 +10564,7 @@ GameObject:
   - component: {fileID: 1254984026}
   m_Layer: 0
   m_Name: Rampa (44)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10813,7 +10813,7 @@ GameObject:
   - component: {fileID: 1261458417}
   m_Layer: 0
   m_Name: Rampa (9)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11385,7 +11385,7 @@ GameObject:
   - component: {fileID: 1371785094}
   m_Layer: 0
   m_Name: Rampa (36)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11673,7 +11673,7 @@ GameObject:
   - component: {fileID: 1404590743}
   m_Layer: 0
   m_Name: Rampa (33)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12095,7 +12095,7 @@ GameObject:
   - component: {fileID: 1460103739}
   m_Layer: 0
   m_Name: Rampa (5)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12481,7 +12481,7 @@ GameObject:
   - component: {fileID: 1525292623}
   m_Layer: 0
   m_Name: Rampa (51)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12932,7 +12932,7 @@ GameObject:
   - component: {fileID: 1627866236}
   m_Layer: 0
   m_Name: Rampa (40)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13356,7 +13356,7 @@ GameObject:
   - component: {fileID: 1678398965}
   m_Layer: 0
   m_Name: Rampa (23)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13824,7 +13824,7 @@ GameObject:
   - component: {fileID: 1693368285}
   m_Layer: 0
   m_Name: Rampa (24)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14143,7 +14143,7 @@ GameObject:
   - component: {fileID: 1747730638}
   m_Layer: 0
   m_Name: Rampa (13)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14504,7 +14504,7 @@ GameObject:
   - component: {fileID: 1792828423}
   m_Layer: 0
   m_Name: Rampa (47)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14609,7 +14609,7 @@ GameObject:
   - component: {fileID: 1819310834}
   m_Layer: 0
   m_Name: Rampa (8)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14998,7 +14998,7 @@ GameObject:
   - component: {fileID: 1850798146}
   m_Layer: 0
   m_Name: Rampa (50)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15103,7 +15103,7 @@ GameObject:
   - component: {fileID: 1864055845}
   m_Layer: 0
   m_Name: Rampa (54)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15208,7 +15208,7 @@ GameObject:
   - component: {fileID: 1888865113}
   m_Layer: 0
   m_Name: Rampa (17)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15418,7 +15418,7 @@ GameObject:
   - component: {fileID: 1913825661}
   m_Layer: 0
   m_Name: Rampa (31)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15601,7 +15601,7 @@ GameObject:
   - component: {fileID: 1952282251}
   m_Layer: 0
   m_Name: Suelo (1)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15706,7 +15706,7 @@ GameObject:
   - component: {fileID: 1964540930}
   m_Layer: 0
   m_Name: Rampa (43)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15811,7 +15811,7 @@ GameObject:
   - component: {fileID: 1972736586}
   m_Layer: 0
   m_Name: Rampa (16)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15990,7 +15990,7 @@ GameObject:
   - component: {fileID: 2025771393}
   m_Layer: 0
   m_Name: Rampa (34)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16095,7 +16095,7 @@ GameObject:
   - component: {fileID: 2029368899}
   m_Layer: 0
   m_Name: Rampa (48)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16437,7 +16437,7 @@ GameObject:
   - component: {fileID: 2052746502}
   m_Layer: 0
   m_Name: Rampa (35)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16573,7 +16573,7 @@ GameObject:
   - component: {fileID: 2071689545}
   m_Layer: 0
   m_Name: Rampa (53)
-  m_TagString: Wall
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
